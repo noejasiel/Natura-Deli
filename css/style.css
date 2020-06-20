@@ -20,7 +20,7 @@ img {
   font-size: 20px;
 }
 #check:checked ~ nav ul li a:hover {
-  background-color: #fabdc5;
+  background-color: #b8d6ec;
   color: White;
   box-shadow: 4px 5px 2px -3px gray;
 }
@@ -28,6 +28,9 @@ img {
 #check:checked ~ nav {
   transition: all 0.5s ease-in-out;
   background-color: #fabdc5;
+}
+#check:checked ~ nav label i {
+  color: #b8d6ec;
 }
 
 .menu {
@@ -43,12 +46,13 @@ img {
   top: 0;
 }
 .menu .logo {
-  width: 30%;
+  width: 120px;
   height: 80px;
   margin-left: 1em;
 }
 .menu label i {
   margin-right: 2em;
+  color: #fabdc5;
 }
 .menu .enlace-menu {
   text-decoration: none;
@@ -73,6 +77,46 @@ img {
   padding: 1em;
   margin: 2em;
   border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  top: 100px;
+}
+.container .inicio {
+  margin: 0 auto;
+  width: 85%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container .inicio .h1-portada {
+  width: 90%;
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  text-align: center;
+  box-shadow: 0.5px 0.5px 4px 1px tomato;
+  border-radius: 9px;
+  padding: 0.5em 0;
+}
+.container .quienes-somos {
+  width: 85%;
+  margin: 2em auto;
+  background-color: #f4f4f3;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px 2px #cfe1ee;
+}
+.container .quienes-somos .h2-portada {
+  color: #e4c8c8;
+  text-align: center;
+  padding: 1em 0;
+}
+.container .quienes-somos .p-portada {
+  color: #b8d6ec;
+  text-align: center;
+  padding: 0em 1em 1em 1em;
 }
 
 * {
