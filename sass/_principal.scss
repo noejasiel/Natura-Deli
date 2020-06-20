@@ -1,3 +1,9 @@
+body {
+  background-image: url("../img/bg-intro-mobile.png");
+  // background-color: #fbe4e7;
+  background-color: #93b3ce;
+}
+
 input {
   display: none;
 }
@@ -62,8 +68,10 @@ img {
   }
   label {
     i {
-      margin-right: 2em;
-      color: #fabdc5;
+      margin-right: 1em;
+      // color: #fabdc5;
+      color: #f6bdc5;
+      font-size: 30px;
     }
   }
   .enlace-menu {
@@ -104,6 +112,9 @@ img {
     position: relative;
     display: flex;
     justify-content: center;
+    .img-portada {
+      border-radius: 15px;
+    }
     .h1-portada {
       width: 90%;
       position: absolute;
@@ -115,23 +126,59 @@ img {
       padding: 0.5em 0;
     }
   }
-
+  .hr {
+    width: 90%;
+    margin: 2em auto 1em auto;
+    color: green;
+  }
   //quienes somos
-  .quienes-somos {
-    width: 85%;
-    margin: 2em auto;
-    background-color: #f4f4f3;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px 2px #cfe1ee;
-    .h2-portada {
-      color: #e4c8c8;
-      text-align: center;
-      padding: 1em 0;
+  .conteiner-section {
+    box-sizing: border-box;
+
+    .importancia {
+      width: 85%;
+      margin: 1em auto 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .img-importancia {
+        width: 30%;
+        height: 30%;
+      }
+      .h3-importancia {
+        color: #ddecec;
+        margin-bottom: 1em;
+      }
+      .p-importancia {
+        color: #ddecec;
+        text-align: center;
+      }
     }
-    .p-portada {
-      color: #b8d6ec;
-      text-align: center;
-      padding: 0em 1em 1em 1em;
+    .quienes-somos {
+      width: 85%;
+      margin: 2em auto;
+      background-color: #f4f4f3;
+      border-radius: 10px;
+      box-shadow: 2px 2px 1px 2px #509763;
+      .h2-portada {
+        // color: #bb8282;
+        color: #1e425c;
+        background-color: #ddecec;
+        text-align: center;
+        padding: 1em 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .p-portada {
+        // color: #5c91b8;
+        // color: #407194;
+        color: #174d25;
+
+        text-align: center;
+        padding: 0em 1em 1em 1em;
+      }
     }
   }
 }
