@@ -14,7 +14,6 @@ img {
 
 #check:checked ~ nav ul {
   margin: 0;
-  transition: 0.3s ease-in;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,8 +30,7 @@ img {
 }
 
 #check:checked ~ nav {
-  transition: all 0.5s ease-in-out;
-  background-color: #fabdc5;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #check:checked ~ nav label i {
   color: #b8d6ec;
@@ -42,10 +40,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: relative;
   padding: 0 0;
   z-index: 11;
-  background-color: #f4f4f4;
+  background-color: rgba(0, 0, 0, 0.3);
   left: 0;
   right: 0;
   top: 0;
@@ -62,7 +60,6 @@ img {
 }
 .menu .enlace-menu {
   text-decoration: none;
-  transition: background-color 0.4s;
   align-items: center;
   position: absolute;
   top: 100%;
@@ -70,45 +67,44 @@ img {
   left: 0;
   margin-left: -1700px;
   width: 100%;
-  background-color: #fabdc5;
+  height: 51vh;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .menu .enlace-menu li {
   list-style: none;
-  padding: 1em;
-  margin: 2em;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 .menu .enlace-menu li a {
   text-decoration: none;
   border-radius: 10px;
-  padding: 1em;
-  margin: 2em;
+  padding: 0.5em 2em;
+  margin: 0.5em;
   border-radius: 10px;
+  font-weight: 800;
 }
 
 .container {
-  position: relative;
+  position: absolute;
   width: 100%;
-  top: 100px;
+  top: 0;
 }
 .container .inicio {
-  margin: 0 auto;
-  width: 85%;
-  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.container .inicio .slider {
   display: flex;
-  justify-content: center;
+  width: 500%;
+  animation: cambio 15s infinite;
+  animation-direction: alternate;
 }
-.container .inicio .img-portada {
-  border-radius: 15px;
+.container .inicio .slider li {
+  width: 100%;
+  list-style: none;
 }
-.container .inicio .h1-portada {
-  width: 90%;
-  position: absolute;
-  bottom: 30px;
-  color: white;
-  text-align: center;
-  box-shadow: 0.5px 0.5px 4px 1px tomato;
-  border-radius: 9px;
-  padding: 0.5em 0;
+.container .inicio .slider li img {
+  width: 100%;
 }
 .container .hr {
   width: 90%;
@@ -133,6 +129,7 @@ img {
 .container .conteiner-section .importancia .h3-importancia {
   color: #ddecec;
   margin-bottom: 1em;
+  text-transform: uppercase;
 }
 .container .conteiner-section .importancia .p-importancia {
   color: #ddecec;
@@ -152,6 +149,7 @@ img {
   padding: 1em 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  text-transform: uppercase;
 }
 .container .conteiner-section .quienes-somos .p-portada {
   color: #174d25;
@@ -159,6 +157,38 @@ img {
   padding: 0em 1em 1em 1em;
 }
 
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  15% {
+    margin-left: 0;
+  }
+  19% {
+    margin-left: -100%;
+  }
+  33% {
+    margin-left: -100%;
+  }
+  38% {
+    margin-left: -200%;
+  }
+  53% {
+    margin-left: -200%;
+  }
+  58% {
+    margin-left: -300%;
+  }
+  73% {
+    margin-left: -300%;
+  }
+  78% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
