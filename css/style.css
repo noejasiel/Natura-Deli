@@ -1,3 +1,8 @@
+body {
+  background-image: url("../img/bg-intro-mobile.png");
+  background-color: #93b3ce;
+}
+
 input {
   display: none;
 }
@@ -51,8 +56,9 @@ img {
   margin-left: 1em;
 }
 .menu label i {
-  margin-right: 2em;
-  color: #fabdc5;
+  margin-right: 1em;
+  color: #f6bdc5;
+  font-size: 30px;
 }
 .menu .enlace-menu {
   text-decoration: none;
@@ -91,6 +97,9 @@ img {
   display: flex;
   justify-content: center;
 }
+.container .inicio .img-portada {
+  border-radius: 15px;
+}
 .container .inicio .h1-portada {
   width: 90%;
   position: absolute;
@@ -101,20 +110,51 @@ img {
   border-radius: 9px;
   padding: 0.5em 0;
 }
-.container .quienes-somos {
+.container .hr {
+  width: 90%;
+  margin: 2em auto 1em auto;
+  color: green;
+}
+.container .conteiner-section {
+  box-sizing: border-box;
+}
+.container .conteiner-section .importancia {
+  width: 85%;
+  margin: 1em auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .conteiner-section .importancia .img-importancia {
+  width: 30%;
+  height: 30%;
+}
+.container .conteiner-section .importancia .h3-importancia {
+  color: #ddecec;
+  margin-bottom: 1em;
+}
+.container .conteiner-section .importancia .p-importancia {
+  color: #ddecec;
+  text-align: center;
+}
+.container .conteiner-section .quienes-somos {
   width: 85%;
   margin: 2em auto;
   background-color: #f4f4f3;
   border-radius: 10px;
-  box-shadow: 2px 2px 1px 2px #cfe1ee;
+  box-shadow: 2px 2px 1px 2px #509763;
 }
-.container .quienes-somos .h2-portada {
-  color: #e4c8c8;
+.container .conteiner-section .quienes-somos .h2-portada {
+  color: #1e425c;
+  background-color: #ddecec;
   text-align: center;
   padding: 1em 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.container .quienes-somos .p-portada {
-  color: #b8d6ec;
+.container .conteiner-section .quienes-somos .p-portada {
+  color: #174d25;
   text-align: center;
   padding: 0em 1em 1em 1em;
 }
